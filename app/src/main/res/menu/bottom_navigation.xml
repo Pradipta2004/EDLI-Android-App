@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_config"
+        android:icon="@drawable/events_icon"
+        android:title="Config" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/settings_icon"
+        android:title="Settings" />
+    <item
+        android:id="@+id/navigation_admin"
+        android:icon="@drawable/timer_settings"
+        android:title="Admin" />
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/logout_icon"
+        android:title="Logout" />
+</menu>

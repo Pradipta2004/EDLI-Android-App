@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">levelstate</string>
+    <string name="scan_text"><u>Scan for New Devices</u>.</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="none_found">No devices found</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="yes_no_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>

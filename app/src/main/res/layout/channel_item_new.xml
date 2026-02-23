@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_new"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="@color/testcolorblue"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:paddingLeft="6dp">
+
+            <Button
+                android:id="@+id/buttonMinus_Relay"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="-"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewRelayno"
+                app:layout_constraintEnd_toStartOf="@+id/textViewRelayno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewRelayno" />
+
+            <TextView
+                android:id="@+id/textViewDelay_new"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@color/yellow"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:text="1 sec"
+                android:textAlignment="center"
+                android:textColor="#444"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/buttonPlus_new"
+                app:layout_constraintTop_toBottomOf="@+id/textView_new" />
+
+            <ImageView
+                android:id="@+id/image_deviceicon_new"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+
+                android:src="@drawable/sensor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_channelNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="120dp"
+                android:gravity="center_vertical"
+                android:text="ChannelNo"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/switch_active_mrk_new"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat" />
+
+            <Switch
+                android:id="@+id/switch_active_mrk_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Active"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:theme="@style/SCBSwitch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switch_water_mrk_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Water"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:theme="@style/WaterSwitch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switch_energised_mrk_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Energised"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/switch_water_mrk_new"
+                app:layout_constraintTop_toBottomOf="@+id/switch_water_mrk_new" />
+
+            <TextView
+                android:id="@+id/textView_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Trip Delay"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/textViewDelay_new"
+                app:layout_constraintStart_toStartOf="@+id/textViewDelay_new"
+                app:layout_constraintTop_toBottomOf="@+id/switch_energised_mrk_new" />
+
+            <TextView
+                android:id="@+id/textViewRelayno"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/yellow"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:text="1 "
+                android:textAlignment="center"
+                android:textColor="#444"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/buttonPlus_Relay"
+                app:layout_constraintStart_toEndOf="@+id/buttonMinus_Relay"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <Button
+                android:id="@+id/buttonMinus_new"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDelay_new"
+                app:layout_constraintEnd_toStartOf="@+id/textViewDelay_new"
+                app:layout_constraintTop_toTopOf="@+id/textViewDelay_new" />
+
+            <Button
+                android:id="@+id/buttonPlus_new"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDelay_new"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewDelay_new" />
+
+            <Button
+                android:id="@+id/buttonPlus_Relay"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="165dp"
+                android:text="+"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewRelayno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewRelayno"
+                app:layout_constraintTop_toTopOf="@+id/textViewRelayno" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Relay No"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch_active_mrk_new" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

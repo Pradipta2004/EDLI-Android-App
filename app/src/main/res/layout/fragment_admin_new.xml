@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="330dp"
+        android:text="4-20mA Calibration Settings"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="4-20mA Calibration Settings" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="4mA Channel 1 Value"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editText4mACh1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="text"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+
+    <EditText
+        android:id="@+id/editText20mACh1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="text"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/pink"
+        app:layout_constraintStart_toStartOf="@+id/editText4mACh1"
+        app:layout_constraintTop_toBottomOf="@+id/editText4mACh1" />
+
+    <EditText
+        android:id="@+id/editText4mACh2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="text"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/pink"
+        app:layout_constraintStart_toStartOf="@+id/editText20mACh1"
+        app:layout_constraintTop_toBottomOf="@+id/editText20mACh1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20mA Channel 1 Value"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText20mACh1"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/editText20mACh1"
+        tools:text="20mA Channel 1 Value" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="4mA Channel 2 Value"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText4mACh2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText4mACh2" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="20mA Channel 2 Value"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText20mACh2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText20mACh2" />
+
+    <EditText
+        android:id="@+id/editText20mACh2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_design"
+        android:textColor="@color/pink"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editText4mACh2"
+        app:layout_constraintTop_toBottomOf="@+id/editText4mACh2" />
+
+    <Button
+        android:id="@+id/buttonSavecalibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/mybutton"
+        android:text="Save"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText20mACh2" />
+
+    <Button
+        android:id="@+id/buttonWriteCalibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/mybutton"
+        android:text="Write"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSavecalibration"
+        app:layout_constraintStart_toEndOf="@+id/buttonSavecalibration"
+        app:layout_constraintTop_toTopOf="@+id/buttonSavecalibration" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:text="Level Settings"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Steam Level"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Level"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextWaterLevel"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/editTextWaterLevel" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short Level"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextShortLevel"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toTopOf="@+id/editTextShortLevel" />
+
+    <EditText
+        android:id="@+id/editTextSteamLevel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"/>
+
+    <EditText
+        android:id="@+id/editTextWaterLevel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/pink"
+        app:layout_constraintStart_toStartOf="@+id/editTextSteamLevel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSteamLevel"
+       />
+
+    <EditText
+        android:id="@+id/editTextShortLevel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_design"
+        android:textColor="@color/pink"
+        android:ems="10"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextWaterLevel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWaterLevel" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4mACalibration"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/toggle_button_background"
+        android:checked="false"
+        android:text="4mA Calibration"
+        android:textAlignment="center"
+        android:textDirection="inherit"
+        android:textOff="4mA Cal Off"
+        android:textOn="4mA Cal On"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButton20mACalibration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton20mACalibration"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/toggle_button_background"
+        android:text="20mA Calibration"
+        android:textOff="20mA Cal Off"
+        android:textOn="20mA Cal On"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonNormalMode"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton4mACalibration"
+        app:layout_constraintTop_toBottomOf="@+id/editText20mACh2" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonNormalMode"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/toggle_button_background"
+        android:textOff="Normal Off"
+        android:textOn="Normal On"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton20mACalibration"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton20mACalibration"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton20mACalibration" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

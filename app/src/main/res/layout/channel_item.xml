@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="@color/testcolorblue"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:paddingLeft="6dp">
+
+            <ImageView
+                android:id="@+id/image_deviceicon"
+                android:layout_width="64dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="8dp"
+
+                android:src="@drawable/sensor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_channelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:text="ChannelNo"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/image_deviceicon"
+                app:layout_constraintLeft_toLeftOf="@+id/image_deviceicon"
+                app:layout_constraintTop_toBottomOf="@+id/switch_active_mrk"
+                tools:ignore="RtlCompat" />
+
+            <Switch
+                android:id="@+id/switch_active_mrk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Active"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/SCBSwitch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switch_water_mrk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Water"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:theme="@style/WaterSwitch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switch_energised_mrk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Energised"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/switch_water_mrk"
+                app:layout_constraintTop_toBottomOf="@+id/switch_water_mrk" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Trip Delay"
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/textViewDelay"
+                app:layout_constraintStart_toStartOf="@+id/textViewDelay"
+                app:layout_constraintTop_toBottomOf="@+id/switch_energised_mrk" />
+
+            <TextView
+                android:id="@+id/textViewDelay"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@color/yellow"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:text="1 sec"
+                android:textAlignment="center"
+                android:textColor="#444"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/buttonPlus"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDelay"
+                app:layout_constraintEnd_toStartOf="@+id/textViewDelay"
+                app:layout_constraintTop_toTopOf="@+id/textViewDelay" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDelay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewDelay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+</FrameLayout>

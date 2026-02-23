@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#66a9d1</color>
+    <color name="colorPrimaryDark">#EB4B81</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#939393</color>
+    <color name="ivory">#FBE7A9</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green">#8BC34A</color>
+    <color name="darkgreen">#315903</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="red">#FF0000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="on_color">#09614c</color>
+    <color name="off_color">#383838</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_body_color">#D1C9B1</color>
+    <color name="colorTrue">#FF0000</color> <!-- Red for true -->
+    <color name="colorFalse">#00FF00</color> <!-- Green for false -->
+    <color name="colorDefault">#0000FF</color> <!-- Blue for default -->
+</resources>
